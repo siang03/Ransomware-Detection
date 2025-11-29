@@ -8,8 +8,8 @@ from filter import process
 logger = logging.getLogger(__name__)
 
 # Cuckoo API URL (Replace with your actual Kali VM IP)
-CUCKOO_API = "http://192.168.43.170:1337"
-BEARER_TOKEN = "RZSHEUbrz2kzp0rBGGhtFw"  # Your token
+CUCKOO_API = "replace_with_your_own_api"
+BEARER_TOKEN = "replace_with_your_own_token"  # Your token
 REPORT_FOLDER = "/home/kali/Desktop/FYPGUI/JSON"  # Folder to save JSON reports
 os.makedirs(REPORT_FOLDER, exist_ok=True)   # ← make sure this directory exists
 
