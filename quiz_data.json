@@ -1,0 +1,2203 @@
+[
+{
+    "info": "Estimates from Cybersecurity Ventures report that ransomware cost businesses over $20 billion in 2020, including ransom payments, downtime, and recovery expenses.",
+    "question": "Approximately how much did ransomware cost businesses in 2020?",
+    "options": [
+      "$1 billion",
+      "$20 billion",
+      "$100 million",
+      "$50 billion"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "AES‑256 is the most commonly used key length in modern ransomware, chosen for its strong security margin and broad hardware acceleration support.",
+    "question": "Which AES key length is most commonly used by modern ransomware?",
+    "options": [
+      "128‑bit",
+      "192‑bit",
+      "256‑bit",
+      "512‑bit"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Ransomware authors typically wrap their AES keys with RSA‑2048 because it balances security and encryption performance.",
+    "question": "What RSA key size is frequently used to encrypt symmetric keys in ransomware?",
+    "options": [
+      "1024‑bit",
+      "2048‑bit",
+      "3072‑bit",
+      "4096‑bit"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Fileless ransomware runs entirely in memory via legitimate tools like PowerShell or WMI, leaving minimal to no artifacts on disk.",
+    "question": "What makes fileless ransomware harder to detect?",
+    "options": [
+      "It disables antivirus",
+      "It runs only in memory with no disk writes",
+      "It uses a custom file extension",
+      "It hides in USB firmware"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Attackers often brute‑force exposed Remote Desktop Protocol (RDP) services to gain initial access for ransomware deployment.",
+    "question": "Which service is commonly brute‑forced to deliver ransomware?",
+    "options": [
+      "FTP",
+      "RDP",
+      "SMTP",
+      "DNS"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "NotPetya masqueraded as ransomware but contained no working decryption routine—its goal was data destruction, not profit.",
+    "question": "What was unusual about the NotPetya attack?",
+    "options": [
+      "It demanded Monero",
+      "It had no real decryption routine",
+      "It spread via USB only",
+      "It targeted smartphones"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "MBR ransomware overwrites the Master Boot Record, preventing the operating system from loading and effectively bricking the machine.",
+    "question": "What does MBR ransomware tamper with to lock victims out?",
+    "options": [
+      "Windows registry",
+      "Bootloader in the MBR",
+      "User documents",
+      "BIOS settings"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Before encryption, many ransomware families run `vssadmin delete shadows` to remove Volume Shadow Copy Service backups and hinder recovery.",
+    "question": "Which Windows utility do attackers often use to delete shadow copies?",
+    "options": [
+      "chkdsk",
+      "vssadmin",
+      "msconfig",
+      "winmgmt"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Triple‑extortion adds distributed denial‑of‑service (DDoS) attacks against the victim’s public‑facing services to increase pressure to pay.",
+    "question": "What extra threat does triple‑extortion ransomware include?",
+    "options": [
+      "Phishing",
+      "DDoS attacks",
+      "VPN hijacking",
+      "Crypto‑mining"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Ransomware gangs host payment portals as TOR hidden services to anonymize their infrastructure and evade takedowns.",
+    "question": "Why do ransomware gangs use TOR hidden services?",
+    "options": [
+      "For faster downloads",
+      "For anonymity of payment portals",
+      "To encrypt the victim’s network",
+      "To improve UI performance"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Encrypting network shares and mapped drives multiplies the impact by affecting multiple users and servers at once.",
+    "question": "Which target increases ransomware’s impact in a corporate environment?",
+    "options": [
+      "Local temp files only",
+      "Network shares and mapped drives",
+      "Browser cache",
+      "Unused system logs"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Attackers include long sleep delays to outlast sandbox‑based dynamic analysis tools, which often terminate samples after a short timeout.",
+    "question": "Why might ransomware include a long sleep before encrypting files?",
+    "options": [
+      "To reduce CPU usage",
+      "To bypass short sandbox timeouts",
+      "To wait for user input",
+      "To randomize file names"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "In double‑extortion, operators leak samples of stolen data on public leak sites to coerce victims into paying.",
+    "question": "What do attackers do with exfiltrated data in double‑extortion?",
+    "options": [
+      "Archive it offline",
+      "Leak samples publicly",
+      "Sell it on app stores",
+      "Encrypt it with a second key"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Ransom notes often display a countdown timer with increasing price tiers to create a sense of urgency.",
+    "question": "What tactic do ransomware notes use to push victims toward quick payment?",
+    "options": [
+      "Discount coupons",
+      "Countdown timers and price increases",
+      "Free decryptor trials",
+      "QR‑code surveys"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "The first step is to isolate the infected system from the network to prevent lateral spread and preserve forensic evidence.",
+    "question": "What should you do first when a system is infected?",
+    "options": [
+      "Pay the ransom",
+      "Isolate the machine from the network",
+      "Reboot immediately",
+      "Disable antivirus"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Security vendors and initiatives like ‘No More Ransom’ host free decryptor tools on GitHub and their official websites.",
+    "question": "Where can you often find free decryptors for known ransomware?",
+    "options": [
+      "GitHub repositories of security vendors",
+      "Dark web forums",
+      "Official ransomware sites",
+      "USB boot drives"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Ransomware typically encrypts high‑value data (documents, spreadsheets, databases) first to maximize impact before bulk‑encrypting everything else.",
+    "question": "Which files do most ransomware variants encrypt first?",
+    "options": [
+      "System DLLs",
+      "High‑value data (documents, databases)",
+      "Temporary logs",
+      "Pagefile.sys"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Many strains disable Windows Defender by modifying Defender’s registry keys under `HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender`.",
+    "question": "How do some strains disable Windows Defender programmatically?",
+    "options": [
+      "Deleting system32 folder",
+      "Modifying Defender registry keys",
+      "Overwriting bootloader",
+      "Uninstalling drivers"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Enterprise‑focused ransomware gangs often demand ransoms in the $1 million–$10 million range, scaling to the victim’s size and revenue.",
+    "question": "What ransom range do enterprise‑focused gangs typically demand?",
+    "options": [
+      "$1,000–$10,000",
+      "$50,000–$500,000",
+      "$1 million–$10 million",
+      "$100–$500"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Stolen code‑signing certificates are used to sign ransomware binaries so they appear as legitimate software to AV and OS checks.",
+    "question": "Why do attackers use stolen code signing certificates?",
+    "options": [
+      "To encrypt files more efficiently",
+      "To make the binary appear trusted",
+      "To disable network adapters",
+      "To inflate file size"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Vulnerable VPN and remote‑management appliances have seen buffer‑overflow exploits used to drop ransomware into corporate networks.",
+    "question": "Which vulnerability type has been used to deliver ransomware to networks?",
+    "options": [
+      "Cross‑site scripting",
+      "Buffer overflow in VPN appliances",
+      "DNS cache poisoning",
+      "SQL injection"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Supply‑chain attacks compromise legitimate software updates or installers to push ransomware to thousands of users via trusted channels.",
+    "question": "What is a supply‑chain ransomware attack?",
+    "options": [
+      "Encrypting logistics documents",
+      "Compromising software updates to deploy ransomware",
+      "Spreading via USB drives",
+      "Attacking shipping companies"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Process hollowing injects malicious code into a legitimate process’s memory space to evade antivirus and hide execution.",
+    "question": "What is process hollowing used for?",
+    "options": [
+      "Encrypting files directly",
+      "Injecting code into legitimate processes",
+      "Speeding up encryption",
+      "Generating user notifications"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Tools like PsExec are frequently used to push ransomware laterally across hosts using valid credentials.",
+    "question": "Which tool is commonly used for ransomware lateral movement?",
+    "options": [
+      "robocopy",
+      "PsExec",
+      "ipconfig",
+      "netstat"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Before encryption, adversaries query Active Directory to map out high‑value servers and accounts for prioritized targeting.",
+    "question": "Why do attackers query Active Directory before encrypting?",
+    "options": [
+      "To disable directory services",
+      "To identify and prioritize high‑value systems",
+      "To extract user passwords",
+      "To delete domain controllers"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Disabling the Volume Shadow Copy Service prevents Windows from creating recovery snapshots, hindering roll‑back.",
+    "question": "Disabling which service stops Windows from creating recovery snapshots?",
+    "options": [
+      "Windows Update",
+      "Volume Shadow Copy Service",
+      "Task Scheduler",
+      "Print Spooler"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Ransomware skips files that it cannot decrypt later or those already encrypted by other tools to avoid errors.",
+    "question": "Why might ransomware skip some files during encryption?",
+    "options": [
+      "They’re too large",
+      "They’re already encrypted",
+      "To avoid files it can’t decrypt later",
+      "To confuse defenders"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Ransomware‑as‑a‑Service (RaaS) builders typically offer customizable payload branding, ransom amounts, and encryption settings.",
+    "question": "What feature do RaaS builders typically provide?",
+    "options": [
+      "Automated patch management",
+      "Customizable payload branding and ransom settings",
+      "Free antivirus modules",
+      "Code‑review tools"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Many ransomware check for VM‑specific registry keys (e.g., VMware tools) or file paths to detect and evade sandbox analysis.",
+    "question": "How do ransomware strains detect sandboxes?",
+    "options": [
+      "By measuring CPU speed",
+      "By looking for VM‑specific registry keys and files",
+      "By testing internet speed",
+      "By checking keyboard input"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Operators often post proof‑of‑concept data on social media or dedicated leak sites to pressure victims publicly.",
+    "question": "Where do attackers often post proof of exfiltrated data?",
+    "options": [
+      "Official company websites",
+      "Social media and leak sites",
+      "USB drives",
+      "Encrypted email only"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Healthcare organizations run critical systems (e.g., patient care, diagnostics) that cannot tolerate downtime, making them high‑pressure ransomware targets.",
+    "question": "Why is healthcare a prime target for ransomware?",
+    "options": [
+      "Data is public domain",
+      "High urgency to restore patient care",
+      "Systems run Linux only",
+      "Very small budgets"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Ransomware authors often name their instruction files “README.txt” to ensure victims open them immediately for payment steps.",
+    "question": "What is a common filename for ransomware ransom notes?",
+    "options": [
+      "README.txt",
+      "DECRYPT_INSTRUCTIONS.html",
+      "INVOICE.pdf",
+      "RECOVER_KEY.docx"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Most modern ransomware uses a hybrid scheme: AES for bulk file encryption and RSA to protect the AES key.",
+    "question": "What encryption scheme do most ransomware variants employ?",
+    "options": [
+      "Symmetric only (AES)",
+      "Asymmetric only (RSA)",
+      "Hybrid AES + RSA",
+      "Hash-based only"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "To avoid system instability or bricking, ransomware usually skips encrypting core OS folders like C:\\Windows.",
+    "question": "Which directory do ransomware typically avoid encrypting?",
+    "options": [
+      "C:\\Windows",
+      "C:\\Users",
+      "C:\\Temp",
+      "C:\\Logs"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Bulletproof hosting providers allow criminals to keep payment portals online despite abuse and takedown requests.",
+    "question": "What type of hosting helps ransomware payment portals stay up despite abuse complaints?",
+    "options": [
+      "Shared hosting",
+      "Bulletproof hosting",
+      "Cloud hosting",
+      "Virtual hosting"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "In 2021 the average ransomware payment across incidents was approximately $200,000, driven by large corporate payouts.",
+    "question": "Approximately what was the average ransom paid in 2021?",
+    "options": [
+      "$50,000",
+      "$200,000",
+      "$1,000,000",
+      "$500,000"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Most ransomware payment sites are .onion addresses, accessible only via the Tor Browser for anonymized transactions.",
+    "question": "Which browser is needed to access most ransomware .onion payment sites?",
+    "options": [
+      "Chrome",
+      "Firefox",
+      "Tor Browser",
+      "Safari"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Process Doppelgänging abuses NTFS transactions to load malicious code without modifying the executable on disk.",
+    "question": "Which technique uses NTFS transaction features to hide malicious code?",
+    "options": [
+      "Process Injection",
+      "Process Doppelgänging",
+      "Process Hollowing",
+      "DLL Side‑loading"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "To encrypt files on network shares, ransomware typically requires valid credentials for that share or domain account.",
+    "question": "What do ransomware need to encrypt files on a network share?",
+    "options": [
+      "Valid credentials",
+      "A local system account",
+      "BIOS-level access",
+      "Physical access to the server"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "A built‑in ‘kill switch’ halts ransomware under certain conditions (e.g., specific machine names or domains) to avoid sandbox flags.",
+    "question": "What is the purpose of a ‘kill switch’ in ransomware code?",
+    "options": [
+      "Stop encryption under certain conditions",
+      "Speed up encryption",
+      "Delete event logs",
+      "Spawn additional processes"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Studies show the average recovery downtime after a ransomware incident is about 16 days, including remediation and restoration.",
+    "question": "How long is the average downtime following a ransomware attack?",
+    "options": [
+      "2 days",
+      "16 days",
+      "45 days",
+      "60 days"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Locky was primarily spread via malicious email attachments in Word or PDF files containing embedded macros.",
+    "question": "How was Locky ransomware primarily distributed?",
+    "options": [
+      "USB drives",
+      "Email attachments",
+      "Malvertising",
+      "Network worms"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Some ransomware check for VM‑specific keyboard device names (e.g., “VMware Virtual”) to detect sandbox or VM environments.",
+    "question": "How do certain ransomware detect analysis environments?",
+    "options": [
+      "Checking CPU speed",
+      "Looking for VM keyboard names",
+      "Measuring disk I/O",
+      "Testing internet connectivity"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "WannaCry exploited the EternalBlue SMBv1 vulnerability to self‑propagate rapidly across unpatched Windows systems.",
+    "question": "Which exploit did WannaCry use to spread rapidly?",
+    "options": [
+      "BlueKeep",
+      "EternalBlue",
+      "Shellshock",
+      "Heartbleed"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Bitcoin remains the most demanded cryptocurrency by ransomware operators due to its liquidity and global acceptance.",
+    "question": "Which cryptocurrency is most demanded by ransomware operators?",
+    "options": [
+      "Ethereum",
+      "Bitcoin",
+      "Monero",
+      "Litecoin"
+    ],
+    "answer": 1
+  },
+   {
+    "info": "Egregor operators used public data‑leak sites to threaten victims by publishing stolen files if ransom wasn’t paid.",
+    "question": "What tactic did Egregor ransomware use besides encryption?",
+    "options": [
+      "Data‑leak threats",
+      "File shredding",
+      "System bricking",
+      "Firmware flashing"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "REvil often first compromised managed service providers to gain access to multiple clients through a single breach.",
+    "question": "What type of organization did REvil commonly target first?",
+    "options": [
+      "Individual PCs",
+      "Managed service providers",
+      "Smartphones",
+      "Home routers"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Newer ransomware variants sometimes encrypt file names in addition to file contents to hinder recovery and analysis.",
+    "question": "What additional data do some modern ransomware encrypt?",
+    "options": [
+      "File timestamps",
+      "File names",
+      "User preferences",
+      "System logs"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "BlackMatter emerged as a direct successor to DarkSide, inheriting much of its codebase and affiliate network.",
+    "question": "BlackMatter is a rebrand of which previous ransomware family?",
+    "options": [
+      "REvil",
+      "DarkSide",
+      "Locky",
+      "Maze"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Analysts examine ransom‑note size and wording to gauge a group’s resources, automation level, and threat sophistication.",
+    "question": "Why might defenders analyze the size and content of a ransom note?",
+    "options": [
+      "To estimate encryption strength",
+      "To identify the threat actor’s sophistication",
+      "To speed up decryption",
+      "To locate payment servers"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Supervised learning trains models on labeled datasets, where each input is paired with the correct output to learn mappings.",
+    "question": "Which type of learning uses labeled datasets for training?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Semi-supervised learning"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Unsupervised learning finds hidden structures or groupings in unlabeled data without predefined output labels.",
+    "question": "What learning paradigm finds structure in unlabeled data?",
+    "options": [
+      "Reinforcement learning",
+      "Supervised learning",
+      "Unsupervised learning",
+      "Transfer learning"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Reinforcement learning involves an agent interacting with an environment and learning policies by receiving rewards or penalties.",
+    "question": "In which learning type does an agent interact with an environment to maximize rewards?",
+    "options": [
+      "Supervised learning",
+      "Reinforcement learning",
+      "Unsupervised learning",
+      "Dimensionality reduction"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Decision trees split data into branches based on feature value thresholds, forming a tree-like model for classification or regression.",
+    "question": "Which algorithm builds a tree-like model of decisions?",
+    "options": [
+      "K-means",
+      "Decision tree",
+      "Naive Bayes",
+      "PCA"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "K-means clustering partitions data into K groups by iteratively assigning points to the nearest cluster centroid and updating centroids.",
+    "question": "Which algorithm groups data into a pre-specified number of clusters?",
+    "options": [
+      "K-means",
+      "Linear regression",
+      "Random forest",
+      "Logistic regression"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Support Vector Machines find the hyperplane that maximally separates classes by maximizing the margin between them.",
+    "question": "Which algorithm finds the maximum margin separator between classes?",
+    "options": [
+      "Naive Bayes",
+      "Neural networks",
+      "Support Vector Machine",
+      "K-nearest neighbors"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Neural networks consist of interconnected layers of neurons that learn hierarchical representations through weighted connections.",
+    "question": "Which model consists of multiple layers of interconnected neurons?",
+    "options": [
+      "Support Vector Machine",
+      "Decision tree",
+      "Neural network",
+      "Gaussian mixture model"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Principal Component Analysis reduces dimensionality by projecting data onto orthogonal components that capture the most variance.",
+    "question": "What technique reduces data dimensions while preserving variance?",
+    "options": [
+      "PCA",
+      "LDA",
+      "Random forest",
+      "Gradient boosting"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "K-nearest neighbors classifies a point based on the majority label among its K closest training examples in feature space.",
+    "question": "Which algorithm classifies based on the closest training examples?",
+    "options": [
+      "K-means",
+      "Naive Bayes",
+      "K-nearest neighbors",
+      "Decision tree"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Gradient boosting builds models sequentially by fitting each new learner to the residual errors of the ensemble so far.",
+    "question": "Which ensemble method builds models sequentially to correct errors of predecessors?",
+    "options": [
+      "Random forest",
+      "AdaBoost",
+      "Gradient boosting",
+      "Bagging"
+    ],
+    "answer": 2
+  },
+    {
+    "info": "Exploit kits automate web-based delivery of ransomware via browser vulnerabilities.",
+    "question": "What is the primary purpose of exploit kits in ransomware distribution?",
+    "options": [
+      "To automate delivery of payloads via browser exploits",
+      "To encrypt files using strong ciphers",
+      "To perform lateral movement across networks",
+      "To host negotiation portals for victims"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Macro malware uses Office macros to execute ransomware payloads.",
+    "question": "How do macro-based attacks typically deliver ransomware?",
+    "options": [
+      "By executing malicious macros embedded in Office documents",
+      "By exploiting SMB vulnerabilities",
+      "By hijacking DLL loading",
+      "By abusing DNS tunneling"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Fast flux uses rapidly changing DNS records to hide C2 infrastructure.",
+    "question": "What is the purpose of fast flux networks in malware campaigns?",
+    "options": [
+      "To hide and rotate C2 infrastructure IPs via DNS",
+      "To encrypt outbound traffic",
+      "To slow down sandbox analysis",
+      "To compress payloads before delivery"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "SSL pinning in malware prevents interception of C2 traffic.",
+    "question": "Why might malware implement SSL pinning?",
+    "options": [
+      "To protect C2 communications from man-in-the-middle interception",
+      "To speed up HTTPS connections",
+      "To bypass DNS filtering",
+      "To reduce certificate overhead"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Precision measures the proportion of true positives among all positive predictions.",
+    "question": "What does precision measure in classification?",
+    "options": [
+      "True positives divided by all positive predictions",
+      "True positives divided by all actual positives",
+      "False positives divided by all positive predictions",
+      "False negatives divided by all actual negatives"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Recall measures the proportion of true positives detected among all actual positives.",
+    "question": "What does recall measure in classification?",
+    "options": [
+      "True positives divided by all actual positives",
+      "True positives divided by all positive predictions",
+      "False negatives divided by all actual positives",
+      "False positives divided by all positive predictions"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "The F1 score is the harmonic mean of precision and recall.",
+    "question": "What is the F1 score?",
+    "options": [
+      "The harmonic mean of precision and recall",
+      "The sum of precision and recall",
+      "The difference between precision and recall",
+      "The average of true positive and true negative rates"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Learning curves plot model performance against varying sizes of training data.",
+    "question": "What do learning curves show?",
+    "options": [
+      "Model performance versus amount of training data",
+      "Training loss versus validation loss",
+      "Number of epochs versus accuracy",
+      "Hyperparameter values versus score"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Adam optimizer combines momentum and adaptive learning rates (RMSprop).",
+    "question": "What is a primary advantage of the Adam optimizer?",
+    "options": [
+      "Adaptive learning rates with momentum",
+      "Guaranteed convergence to global minima",
+      "No need for gradient computation",
+      "Usage of only first-order moments"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Batch gradient descent uses the entire dataset to compute each update step.",
+    "question": "What distinguishes batch gradient descent from stochastic gradient descent?",
+    "options": [
+      "It uses the entire dataset for each parameter update",
+      "It updates parameters after each training example",
+      "It requires no learning rate",
+      "It converges in a single step"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Mini-batch gradient descent uses small subsets of data per update to balance noise and efficiency.",
+    "question": "What advantage does mini-batch gradient descent offer?",
+    "options": [
+      "A balance between noisy updates and computational efficiency",
+      "Guaranteed monotonic decrease of loss",
+      "No need to shuffle data",
+      "Deterministic convergence speed"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Dropout randomly zeroes neurons during training to reduce overfitting by preventing co-adaptation.",
+    "question": "What is the main effect of dropout in neural networks?",
+    "options": [
+      "Reduces co-adaptation of neurons to prevent overfitting",
+      "Speeds up forward propagation",
+      "Increases network depth dynamically",
+      "Compresses model weights"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "L1 regularization adds an absolute penalty on weights, encouraging sparsity.",
+    "question": "What characteristic does L1 regularization encourage in model parameters?",
+    "options": [
+      "Sparsity (many weights exactly zero)",
+      "Large weight values",
+      "Uniform distribution of weights",
+      "Grouping of correlated features"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "L2 regularization adds a squared penalty on weights, encouraging small but non-zero weights.",
+    "question": "What does L2 regularization minimize?",
+    "options": [
+      "The sum of squared weight values",
+      "The absolute sum of weight values",
+      "The learning rate schedule",
+      "The number of features used"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Feature normalization rescales input features to a predefined range, typically [0, 1].",
+    "question": "What is the purpose of feature normalization?",
+    "options": [
+      "To rescale features to a uniform range, often [0, 1]",
+      "To reduce dimensionality via projection",
+      "To split data into clusters",
+      "To balance class distributions"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Feature standardization transforms features to have zero mean and unit variance.",
+    "question": "What does standardization do to features?",
+    "options": [
+      "Centers them to mean 0 and scales to unit variance",
+      "Normalizes them to [0, 1] range",
+      "Removes skewness by log transform",
+      "Encodes categorical variables"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Watering hole attacks infect legitimate websites to compromise visitors.",
+    "question": "What best describes a watering hole attack?",
+    "options": [
+      "Infecting websites frequented by targets to compromise visitors",
+      "Using fake domain registrations to trick users",
+      "Sending malicious emails with attachments",
+      "Exploiting cloud APIs for payload delivery"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Typosquatting registers domains similar to legitimate ones so users mistype and land on malicious sites.",
+    "question": "How does typosquatting facilitate malware distribution?",
+    "options": [
+      "By tricking users into visiting malicious domains that look like legitimate ones",
+      "By injecting code into legitimate executables",
+      "By phishing via email campaigns",
+      "By exploiting network shares"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Macro obfuscation encodes or hides malicious macro code to evade signature-based detection.",
+    "question": "Why do malware authors obfuscate macros in documents?",
+    "options": [
+      "To avoid signature-based detection by hiding the true code",
+      "To accelerate macro execution speed",
+      "To ensure compatibility across Office versions",
+      "To compress the document size"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Ransomware can achieve persistence by setting registry run keys to launch on startup.",
+    "question": "Which Windows registry key do ransomware often modify to achieve persistence?",
+    "options": [
+      "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+      "HKCU\\Control Panel\\Desktop",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Some malware check for human-like mouse movement to detect sandbox environments.",
+    "question": "Which sandbox evasion technique checks for user input existence?",
+    "options": [
+      "Timing-based delays",
+      "Mouse movement detection",
+      "Checksum validation",
+      "Process hollowing"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "API call frequency can be a strong indicator of malicious behavior in dynamic analysis.",
+    "question": "What is a common feature used in ML‑based malware detection?",
+    "options": [
+      "API call frequency",
+      "File extension",
+      "Filename length",
+      "CPU usage"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "The scikit-learn `metrics` module includes functions such as `precision_score`, `recall_score`, and `f1_score`.",
+    "question": "Which scikit-learn module provides functions for calculating precision, recall, and F1-score?",
+    "options": [
+      "sklearn.metrics",
+      "sklearn.preprocessing",
+      "sklearn.model_selection",
+      "sklearn.ensemble"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "One‑hot encoding creates a separate binary column for each category level.",
+    "question": "What does one‑hot encoding do to categorical variables?",
+    "options": [
+      "Represents each category as a separate binary feature",
+      "Maps categories to integer labels",
+      "Standardizes each category to zero mean",
+      "Clusters categories into groups"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Feature selection reduces overfitting by eliminating irrelevant or redundant features.",
+    "question": "What is the primary purpose of feature selection in ML?",
+    "options": [
+      "Reduce dimensionality and improve generalization",
+      "Increase model complexity",
+      "Randomize feature order",
+      "Enhance overfitting"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "AES‑CBC mode XORs each plaintext block with the previous ciphertext block before encryption.",
+    "question": "How does AES in CBC mode operate?",
+    "options": [
+      "XORs each plaintext block with the previous ciphertext block",
+      "Encrypts each block independently",
+      "Uses a counter for each block",
+      "Provides built‑in authentication"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Sandbox time dilation slows down the analysis clock to bypass malware sleep timeouts.",
+    "question": "What does sandbox time dilation refer to?",
+    "options": [
+      "Artificially delaying analysis to exceed malware timeouts",
+      "Accelerating system clock to confuse malware",
+      "Randomizing API call timings",
+      "Synchronizing with NTP servers"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "UPX is a popular packer used to compress and obfuscate executables.",
+    "question": "Which tool is commonly used for static unpacking of executables?",
+    "options": [
+      "UPX",
+      "Crypter",
+      "PyInstaller",
+      "Packman"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "WannaCry exploited the SMBv1 protocol via the EternalBlue vulnerability to spread.",
+    "question": "Which protocol did WannaCry leverage via EternalBlue?",
+    "options": [
+      "SMBv1",
+      "FTP",
+      "HTTP",
+      "SMTP"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Dynamic analysis involves running the sample and observing its behavior, such as API calls.",
+    "question": "What type of analysis studies API calls at runtime?",
+    "options": [
+      "Dynamic analysis",
+      "Static analysis",
+      "Signature analysis",
+      "Heuristic analysis"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "RDP’s default port is 3389, which is often targeted for brute‑forcing by attackers.",
+    "question": "What is the default port for Remote Desktop Protocol (RDP)?",
+    "options": [
+      "3389",
+      "22",
+      "80",
+      "443"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Least Privilege means users/processes run with the minimum privileges needed.",
+    "question": "Which security principle involves giving users only the permissions they need?",
+    "options": [
+      "Principle of Least Privilege",
+      "Defense in Depth",
+      "Zero Trust",
+      "Separation of Duties"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "An ROC curve plots the true positive rate against the false positive rate at various thresholds.",
+    "question": "What does an ROC curve plot in classification?",
+    "options": [
+      "True Positive Rate vs. False Positive Rate",
+      "Precision vs. Recall",
+      "Accuracy vs. Threshold",
+      "Loss vs. Epochs"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "AUC stands for Area Under the ROC Curve, summarizing overall classifier performance.",
+    "question": "What does the AUC metric measure?",
+    "options": [
+      "Area Under the ROC Curve",
+      "Area Under the PR Curve",
+      "Average Accuracy of Classifier",
+      "Absolute Error Rate"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "`class_weight='balanced'` adjusts sample weights inversely proportional to class frequencies.",
+    "question": "Why would you use `class_weight='balanced'` in sklearn's RandomForest?",
+    "options": [
+      "To handle imbalanced class distributions",
+      "To speed up training",
+      "To reduce memory usage",
+      "To enforce deeper trees"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Isolation Forest isolates anomalies by randomly partitioning data points.",
+    "question": "Which algorithm is designed for anomaly detection in high‑dimensional data?",
+    "options": [
+      "Isolation Forest",
+      "K‑Means",
+      "Decision Tree",
+      "Logistic Regression"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Stratified sampling preserves the original class distribution in each cross‑validation fold.",
+    "question": "What is the purpose of stratified sampling in cross‑validation?",
+    "options": [
+      "Maintain class distribution in each fold",
+      "Randomly shuffle data",
+      "Reduce dataset size",
+      "Accelerate training"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "One‑hot encoding creates binary indicator columns for each category level, making categorical data usable by most ML algorithms.",
+    "question": "Which preprocessing technique converts a categorical feature into separate binary columns for each category?",
+    "options": [
+      "Label encoding",
+      "One‑hot encoding",
+      "Standard scaling",
+      "Min‑max scaling"
+    ],
+    "answer": 1
+  }, 
+  {
+    "info": "Cerber variants often appended the `.cerber` extension to encrypted files.",
+    "question": "Which file extension did Cerber ransomware commonly use?",
+    "options": [
+      ".locky",
+      ".cerber",
+      ".crypt",
+      ".zepto"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "I2P, like Tor, provides anonymized networking suitable for C2 communications.",
+    "question": "Aside from Tor, what network can malware use to hide C2 traffic?",
+    "options": [
+      "I2P",
+      "VPN",
+      "HTTP Proxy",
+      "SSH Tunnel"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Adversarial learning uses crafted inputs to harden models against evasion attempts.",
+    "question": "What is the goal of adversarial learning in ML security?",
+    "options": [
+      "Generate adversarial examples to improve robustness",
+      "Optimize hyperparameters automatically",
+      "Compress model size",
+      "Visualize decision boundaries"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "MITRE ATT&CK T1055 corresponds to various process injection techniques.",
+    "question": "Which MITRE ATT&CK ID corresponds to process injection?",
+    "options": [
+      "T1055",
+      "T1027",
+      "T1105",
+      "T1560"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Cuckoo Sandbox automates dynamic analysis of malicious files in a VM environment.",
+    "question": "What is the main advantage of using Cuckoo Sandbox for malware analysis?",
+    "options": [
+      "Automated dynamic analysis in an isolated environment",
+      "Deep static code review",
+      "Network scanning of live systems",
+      "Host‑based intrusion detection"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "High entropy in a file often indicates encryption or compression, common in packed malware.",
+    "question": "In file analysis, what does a high entropy score suggest?",
+    "options": [
+      "Data is encrypted or compressed",
+      "File contains plain text",
+      "File is unsigned",
+      "Low randomness"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Attackers sometimes register multiple fallback domains so that if one C2 domain is blocked, the malware can still reach another.",
+    "question": "What is the purpose of C2 fallback domains in ransomware campaigns?",
+    "options": [
+      "To confuse network defenders",
+      "To ensure continued command‐and‐control connectivity",
+      "To encrypt data twice",
+      "To slow down analysis sandboxes"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "DLL side‑loading abuses a vulnerable, signed executable to load a malicious DLL instead of the legitimate one.",
+    "question": "What does DLL side‑loading allow an attacker to do?",
+    "options": [
+      "Bypass UAC prompts",
+      "Execute code under a trusted process",
+      "Hijack network traffic",
+      "Evade file‐hash detection"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Some ransomware beacon over DNS by embedding commands in the TXT records of a domain.",
+    "question": "Why might ransomware use DNS TXT records for C2 communication?",
+    "options": [
+      "TXT records support large file transfers",
+      "They are rarely inspected by network filters",
+      "They bypass SSL/TLS encryption",
+      "They require administrative privileges"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Powershell profiles can be abused to automatically run scripts on user logon for persistence.",
+    "question": "Which PowerShell file can malware modify to achieve persistence?",
+    "options": [
+      "Microsoft.PowerShell_profile.ps1",
+      "powershell.exe.config",
+      "psedit.ps1",
+      "profile.log"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Living‑off‑the‑land techniques leverage built‑in OS tools (e.g. certutil, wmic) to reduce malware footprint.",
+    "question": "What is a hallmark of living‑off‑the‑land malware?",
+    "options": [
+      "It ships with its own encryption library",
+      "It uses only preinstalled, legitimate system tools",
+      "It requires no network connection",
+      "It runs only in kernel mode"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "OpenSSL can be abused to encrypt or decrypt files from the command line on compromised systems.",
+    "question": "Which legitimate tool can attackers misuse to perform file encryption on Linux?",
+    "options": [
+      "gpg",
+      "openssl",
+      "tar",
+      "scp"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Packers compress and obfuscate executables, making static analysis and signature matching more difficult.",
+    "question": "What is the primary role of a packer in malware?",
+    "options": [
+      "To load malicious DLLs at runtime",
+      "To exploit memory corruption bugs",
+      "To compress and obfuscate the executable",
+      "To encrypt network traffic"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "YARA rules are widely used by threat hunters to match patterns of known malware families.",
+    "question": "What are YARA rules used for?",
+    "options": [
+      "Generating encryption keys",
+      "Defining threat indicators for file matching",
+      "Evading sandbox timeouts",
+      "Manipulating Windows registry"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "An Indicator of Compromise (IOC) could be an IP, a filename, or a registry key that signals a breach.",
+    "question": "Which of the following is an example of an IOC?",
+    "options": [
+      "A sandbox environment",
+      "A known‐bad IP address",
+      "A legitimate SSL certificate",
+      "A packed executable"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Beacon intervals control how often malware polls its C2 server for instructions.",
+    "question": "Why might an attacker adjust the beacon interval of ransomware?",
+    "options": [
+      "To speed up encryption",
+      "To avoid detection by lowering network chatter",
+      "To bypass file‐integrity monitoring",
+      "To automate lateral movement"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "A stager is a small initial payload whose only job is to download and run the larger main payload.",
+    "question": "What is the role of a stager in a multi‑stage attack?",
+    "options": [
+      "To encrypt files on disk",
+      "To bypass antivirus signatures",
+      "To deliver and launch the main payload",
+      "To perform lateral movement"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Base64 encoding is often used to hide malicious strings or payloads inside otherwise benign traffic.",
+    "question": "What is Base64 encoding commonly used for in malware C2 traffic?",
+    "options": [
+      "Encrypting data with a public key",
+      "Compressing payloads for delivery",
+      "Obfuscating payloads in transit",
+      "Authenticating with the server"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "TLS 1.3 encrypts the SNI field by default, making it harder to identify C2 domains in network captures.",
+    "question": "Which TLS version introduced encrypted SNI, improving C2 stealth?",
+    "options": [
+      "TLS 1.1",
+      "TLS 1.2",
+      "TLS 1.3",
+      "SSL 3.0"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Proxy chaining routes C2 traffic through multiple servers, adding layers of obfuscation.",
+    "question": "What benefit does proxy‑chaining give to ransomware operators?",
+    "options": [
+      "Faster file encryption",
+      "Enhanced anonymity for C2 communications",
+      "Reduced CPU usage",
+      "Direct local network access"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Cron jobs are a popular Linux persistence mechanism that runs specified commands at set intervals.",
+    "question": "Which Linux facility is commonly abused for malware persistence?",
+    "options": [
+      "/etc/fstab",
+      "systemd timers",
+      "cron jobs",
+      "iptables rules"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "The HKLM\\Run registry key automatically launches executables at user login on Windows.",
+    "question": "What does modifying HKLM\\Run in the registry achieve?",
+    "options": [
+      "Disables Windows Update",
+      "Persists malware to run at startup",
+      "Encrypts the MBR",
+      "Blocks antivirus updates"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "LSASS memory dumps can yield credentials, which attackers use for lateral movement or privilege escalation.",
+    "question": "Why do adversaries dump LSASS process memory?",
+    "options": [
+      "To encrypt files faster",
+      "To extract cleartext credentials",
+      "To evade memory scanners",
+      "To disable Defender"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Mimikatz is a well‑known tool for extracting passwords, hashes, and tickets from Windows memory.",
+    "question": "What capability is Mimikatz famous for?",
+    "options": [
+      "Generating zero‑day exploits",
+      "Extracting credentials from memory",
+      "Scanning networks for open RDP",
+      "Bypassing UAC"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Pass‑the‑hash uses stolen NTLM hashes instead of plaintext passwords to authenticate to other systems.",
+    "question": "What does a pass‑the‑hash attack use to authenticate?",
+    "options": [
+      "Kerberos tickets",
+      "NTLM password hashes",
+      "OAuth tokens",
+      "SSH keys"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Golden tickets are forged Kerberos TGTs that give attackers long‑term AD access.",
+    "question": "What is a “golden ticket” in Windows AD attacks?",
+    "options": [
+      "A valid RSA key pair",
+      "A forged Kerberos TGT",
+      "A service principal name",
+      "A custom AD schema"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Kerberoasting involves requesting service tickets for SPNs and cracking them offline to reveal service account passwords.",
+    "question": "Which technique targets Kerberos service tickets to obtain credentials?",
+    "options": [
+      "Pass‑the‑ticket",
+      "Kerberoasting",
+      "AS‑rep roasting",
+      "NTDS dump"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Zero‑day exploits target vulnerabilities not yet known to the vendor, making them highly valuable to attackers.",
+    "question": "What defines a zero‑day vulnerability?",
+    "options": [
+      "It’s patched but untested",
+      "It’s publicly documented",
+      "It’s unknown to the vendor",
+      "It only affects Linux"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Fuzzing tools feed random or malformed inputs to software to discover memory‑corruption bugs.",
+    "question": "What is the purpose of fuzzing in security testing?",
+    "options": [
+      "Automatically patching software",
+      "Discovering unknown vulnerabilities",
+      "Encrypting network traffic",
+      "Analyzing malware payloads"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Heap spraying floods memory with attacker‑controlled data to increase chances of hitting shellcode during exploitation.",
+    "question": "What does heap spraying aim to achieve?",
+    "options": [
+      "Reduce malware footprint",
+      "Overwrite kernel code",
+      "Increase likelihood of code execution",
+      "Disable address space layout randomization"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Return‑oriented programming (ROP) chains reuse snippets of existing code to bypass DEP and execute arbitrary logic.",
+    "question": "Which technique uses existing code snippets for exploit payloads?",
+    "options": [
+      "DLL side‑loading",
+      "ROP chaining",
+      "Heap grooming",
+      "Direct syscall"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "CreateRemoteThread is a common API used to inject a DLL into another process’s address space.",
+    "question": "Which Windows API is often abused for DLL injection?",
+    "options": [
+      "WriteProcessMemory",
+      "CreateRemoteThread",
+      "LoadLibraryA",
+      "SetWindowsHookEx"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Reflective DLL loading maps a DLL from memory without touching disk, avoiding file‑based detection.",
+    "question": "What advantage does reflective DLL injection offer?",
+    "options": [
+      "Automates sandbox detection",
+      "Loads payload entirely from memory",
+      "Encrypts API calls",
+      "Blocks user input"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "File carving recovers files from raw disk or memory dumps by matching known header and footer signatures.",
+    "question": "What is file carving used for in forensics?",
+    "options": [
+      "Encrypting recovered files",
+      "Reconstructing files from fragments",
+      "Scanning for malware signatures",
+      "Blocking deleted files"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Steganography hides data within images or audio, allowing covert exfiltration beyond simple encryption.",
+    "question": "Which technique conceals data inside a benign file?",
+    "options": [
+      "Obfuscation",
+      "Steganography",
+      "Rootkit",
+      "Sandboxing"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Polyglot files are crafted to be valid in multiple formats simultaneously (e.g., PDF+JPEG).",
+    "question": "What is a polyglot file?",
+    "options": [
+      "A file encrypted twice",
+      "A file compressed with two algorithms",
+      "A file valid in multiple formats",
+      "A split payload across formats"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Hardware breakpoints are sometimes used by sandboxes, and malware checks for them to detect analysis environments.",
+    "question": "Why might malware look for hardware breakpoints?",
+    "options": [
+      "To speed up encryption",
+      "To detect debugger or sandbox presence",
+      "To change CPU core affinity",
+      "To disable interrupts"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Antimalware drivers may fail to inspect encrypted traffic on common ports like 443, which attackers exploit for C2.",
+    "question": "Which port is often abused by malware to mask C2 traffic in HTTPS?",
+    "options": [
+      "80",
+      "22",
+      "443",
+      "53"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Hosts file poisoning can redirect legitimate domains to attacker‐controlled IPs for C2 or phishing.",
+    "question": "What can modifying the Windows hosts file achieve for attackers?",
+    "options": [
+      "Prevent OS boot",
+      "Redirect domains to malicious IPs",
+      "Disable DNS caching",
+      "Encrypt local files"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Code signing certificates stolen from compromised vendors let malware appear legitimate to the OS and AV products.",
+    "question": "What benefit does a stolen code‑signing certificate give malware?",
+    "options": [
+      "Faster execution",
+      "Bypass signature‐based checks",
+      "Smaller binary size",
+      "Automatic privilege escalation"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Malleable C2 profiles allow adversaries to shape their network traffic to mimic benign protocols like HTTP or DNS.",
+    "question": "What is the goal of malleable C2 traffic?",
+    "options": [
+      "Increase encryption strength",
+      "Make C2 look like normal traffic",
+      "Reduce malware memory usage",
+      "Disable host firewalls"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "TLS certificates with short validity and self‑signed chains are often used by malware to avoid detection.",
+    "question": "Why might malware use a self‑signed TLS certificate?",
+    "options": [
+      "To avoid paying CAs",
+      "To be immediately trusted",
+      "To match enterprise cert policies",
+      "To display a green lock"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Time‑based sandbox evasion causes malware to sleep longer than the sandbox’s execution window, stalling analysis.",
+    "question": "Which technique uses sleep delays to evade automated analysis?",
+    "options": [
+      "Beacon jitter",
+      "Time bomb",
+      "Heap spray",
+      "Thread hijacking"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Memory exploitation checks like measuring CPU frequency differences can reveal virtualized environments.",
+    "question": "Which sandbox evasion method measures CPU characteristics?",
+    "options": [
+      "CPUID timing checks",
+      "File‐system enumeration",
+      "Registry key presence",
+      "DLL load order"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Anti‑debugging APIs such as IsDebuggerPresent allow malware to detect when a debugger is attached.",
+    "question": "What does calling IsDebuggerPresent() in code detect?",
+    "options": [
+      "Sandbox network block",
+      "Presence of a debugger",
+      "Encrypted shellcode",
+      "Expired certificates"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Attackers sometimes register multiple fallback domains so that if one C2 domain is blocked, the malware can still reach another.",
+    "question": "What is the purpose of C2 fallback domains in ransomware campaigns?",
+    "options": [
+      "To confuse network defenders",
+      "To ensure continued command‐and‐control connectivity",
+      "To encrypt data twice",
+      "To slow down analysis sandboxes"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "DLL side‑loading abuses a vulnerable, signed executable to load a malicious DLL instead of the legitimate one.",
+    "question": "What does DLL side‑loading allow an attacker to do?",
+    "options": [
+      "Bypass UAC prompts",
+      "Execute code under a trusted process",
+      "Hijack network traffic",
+      "Evade file‐hash detection"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Some ransomware beacon over DNS by embedding commands in the TXT records of a domain.",
+    "question": "Why might ransomware use DNS TXT records for C2 communication?",
+    "options": [
+      "TXT records support large file transfers",
+      "They are rarely inspected by network filters",
+      "They bypass SSL/TLS encryption",
+      "They require administrative privileges"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Powershell profiles can be abused to automatically run scripts on user logon for persistence.",
+    "question": "Which PowerShell file can malware modify to achieve persistence?",
+    "options": [
+      "Microsoft.PowerShell_profile.ps1",
+      "powershell.exe.config",
+      "psedit.ps1",
+      "profile.log"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Living‑off‑the‑land techniques leverage built‑in OS tools (e.g. certutil, wmic) to reduce malware footprint.",
+    "question": "What is a hallmark of living‑off‑the‑land malware?",
+    "options": [
+      "It ships with its own encryption library",
+      "It uses only preinstalled, legitimate system tools",
+      "It requires no network connection",
+      "It runs only in kernel mode"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "OpenSSL can be abused to encrypt or decrypt files from the command line on compromised systems.",
+    "question": "Which legitimate tool can attackers misuse to perform file encryption on Linux?",
+    "options": [
+      "gpg",
+      "openssl",
+      "tar",
+      "scp"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Packers compress and obfuscate executables, making static analysis and signature matching more difficult.",
+    "question": "What is the primary role of a packer in malware?",
+    "options": [
+      "To load malicious DLLs at runtime",
+      "To exploit memory corruption bugs",
+      "To compress and obfuscate the executable",
+      "To encrypt network traffic"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "YARA rules are widely used by threat hunters to match patterns of known malware families.",
+    "question": "What are YARA rules used for?",
+    "options": [
+      "Generating encryption keys",
+      "Defining threat indicators for file matching",
+      "Evading sandbox timeouts",
+      "Manipulating Windows registry"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "An Indicator of Compromise (IOC) could be an IP, a filename, or a registry key that signals a breach.",
+    "question": "Which of the following is an example of an IOC?",
+    "options": [
+      "A sandbox environment",
+      "A known‐bad IP address",
+      "A legitimate SSL certificate",
+      "A packed executable"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Beacon intervals control how often malware polls its C2 server for instructions.",
+    "question": "Why might an attacker adjust the beacon interval of ransomware?",
+    "options": [
+      "To speed up encryption",
+      "To avoid detection by lowering network chatter",
+      "To bypass file‐integrity monitoring",
+      "To automate lateral movement"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "A stager is a small initial payload whose only job is to download and run the larger main payload.",
+    "question": "What is the role of a stager in a multi‑stage attack?",
+    "options": [
+      "To encrypt files on disk",
+      "To bypass antivirus signatures",
+      "To deliver and launch the main payload",
+      "To perform lateral movement"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Base64 encoding is often used to hide malicious strings or payloads inside otherwise benign traffic.",
+    "question": "What is Base64 encoding commonly used for in malware C2 traffic?",
+    "options": [
+      "Encrypting data with a public key",
+      "Compressing payloads for delivery",
+      "Obfuscating payloads in transit",
+      "Authenticating with the server"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "TLS 1.3 encrypts the SNI field by default, making it harder to identify C2 domains in network captures.",
+    "question": "Which TLS version introduced encrypted SNI, improving C2 stealth?",
+    "options": [
+      "TLS 1.1",
+      "TLS 1.2",
+      "TLS 1.3",
+      "SSL 3.0"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Proxy chaining routes C2 traffic through multiple servers, adding layers of obfuscation.",
+    "question": "What benefit does proxy‑chaining give to ransomware operators?",
+    "options": [
+      "Faster file encryption",
+      "Enhanced anonymity for C2 communications",
+      "Reduced CPU usage",
+      "Direct local network access"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Cron jobs are a popular Linux persistence mechanism that runs specified commands at set intervals.",
+    "question": "Which Linux facility is commonly abused for malware persistence?",
+    "options": [
+      "/etc/fstab",
+      "systemd timers",
+      "cron jobs",
+      "iptables rules"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "The HKLM\\Run registry key automatically launches executables at user login on Windows.",
+    "question": "What does modifying HKLM\\Run in the registry achieve?",
+    "options": [
+      "Disables Windows Update",
+      "Persists malware to run at startup",
+      "Encrypts the MBR",
+      "Blocks antivirus updates"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "LSASS memory dumps can yield credentials, which attackers use for lateral movement or privilege escalation.",
+    "question": "Why do adversaries dump LSASS process memory?",
+    "options": [
+      "To encrypt files faster",
+      "To extract cleartext credentials",
+      "To evade memory scanners",
+      "To disable Defender"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Mimikatz is a well‑known tool for extracting passwords, hashes, and tickets from Windows memory.",
+    "question": "What capability is Mimikatz famous for?",
+    "options": [
+      "Generating zero‑day exploits",
+      "Extracting credentials from memory",
+      "Scanning networks for open RDP",
+      "Bypassing UAC"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Pass‑the‑hash uses stolen NTLM hashes instead of plaintext passwords to authenticate to other systems.",
+    "question": "What does a pass‑the‑hash attack use to authenticate?",
+    "options": [
+      "Kerberos tickets",
+      "NTLM password hashes",
+      "OAuth tokens",
+      "SSH keys"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Golden tickets are forged Kerberos TGTs that give attackers long‑term AD access.",
+    "question": "What is a “golden ticket” in Windows AD attacks?",
+    "options": [
+      "A valid RSA key pair",
+      "A forged Kerberos TGT",
+      "A service principal name",
+      "A custom AD schema"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Kerberoasting involves requesting service tickets for SPNs and cracking them offline to reveal service account passwords.",
+    "question": "Which technique targets Kerberos service tickets to obtain credentials?",
+    "options": [
+      "Pass‑the‑ticket",
+      "Kerberoasting",
+      "AS‑rep roasting",
+      "NTDS dump"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Zero‑day exploits target vulnerabilities not yet known to the vendor, making them highly valuable to attackers.",
+    "question": "What defines a zero‑day vulnerability?",
+    "options": [
+      "It’s patched but untested",
+      "It’s publicly documented",
+      "It’s unknown to the vendor",
+      "It only affects Linux"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Fuzzing tools feed random or malformed inputs to software to discover memory‑corruption bugs.",
+    "question": "What is the purpose of fuzzing in security testing?",
+    "options": [
+      "Automatically patching software",
+      "Discovering unknown vulnerabilities",
+      "Encrypting network traffic",
+      "Analyzing malware payloads"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Heap spraying floods memory with attacker‑controlled data to increase chances of hitting shellcode during exploitation.",
+    "question": "What does heap spraying aim to achieve?",
+    "options": [
+      "Reduce malware footprint",
+      "Overwrite kernel code",
+      "Increase likelihood of code execution",
+      "Disable address space layout randomization"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Return‑oriented programming (ROP) chains reuse snippets of existing code to bypass DEP and execute arbitrary logic.",
+    "question": "Which technique uses existing code snippets for exploit payloads?",
+    "options": [
+      "DLL side‑loading",
+      "ROP chaining",
+      "Heap grooming",
+      "Direct syscall"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "CreateRemoteThread is a common API used to inject a DLL into another process’s address space.",
+    "question": "Which Windows API is often abused for DLL injection?",
+    "options": [
+      "WriteProcessMemory",
+      "CreateRemoteThread",
+      "LoadLibraryA",
+      "SetWindowsHookEx"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Reflective DLL loading maps a DLL from memory without touching disk, avoiding file‑based detection.",
+    "question": "What advantage does reflective DLL injection offer?",
+    "options": [
+      "Automates sandbox detection",
+      "Loads payload entirely from memory",
+      "Encrypts API calls",
+      "Blocks user input"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "File carving recovers files from raw disk or memory dumps by matching known header and footer signatures.",
+    "question": "What is file carving used for in forensics?",
+    "options": [
+      "Encrypting recovered files",
+      "Reconstructing files from fragments",
+      "Scanning for malware signatures",
+      "Blocking deleted files"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Steganography hides data within images or audio, allowing covert exfiltration beyond simple encryption.",
+    "question": "Which technique conceals data inside a benign file?",
+    "options": [
+      "Obfuscation",
+      "Steganography",
+      "Rootkit",
+      "Sandboxing"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Polyglot files are crafted to be valid in multiple formats simultaneously (e.g., PDF+JPEG).",
+    "question": "What is a polyglot file?",
+    "options": [
+      "A file encrypted twice",
+      "A file compressed with two algorithms",
+      "A file valid in multiple formats",
+      "A split payload across formats"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Hardware breakpoints are sometimes used by sandboxes, and malware checks for them to detect analysis environments.",
+    "question": "Why might malware look for hardware breakpoints?",
+    "options": [
+      "To speed up encryption",
+      "To detect debugger or sandbox presence",
+      "To change CPU core affinity",
+      "To disable interrupts"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Antimalware drivers may fail to inspect encrypted traffic on common ports like 443, which attackers exploit for C2.",
+    "question": "Which port is often abused by malware to mask C2 traffic in HTTPS?",
+    "options": [
+      "80",
+      "22",
+      "443",
+      "53"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Hosts file poisoning can redirect legitimate domains to attacker‐controlled IPs for C2 or phishing.",
+    "question": "What can modifying the Windows hosts file achieve for attackers?",
+    "options": [
+      "Prevent OS boot",
+      "Redirect domains to malicious IPs",
+      "Disable DNS caching",
+      "Encrypt local files"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Code signing certificates stolen from compromised vendors let malware appear legitimate to the OS and AV products.",
+    "question": "What benefit does a stolen code‑signing certificate give malware?",
+    "options": [
+      "Faster execution",
+      "Bypass signature‐based checks",
+      "Smaller binary size",
+      "Automatic privilege escalation"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Malleable C2 profiles allow adversaries to shape their network traffic to mimic benign protocols like HTTP or DNS.",
+    "question": "What is the goal of malleable C2 traffic?",
+    "options": [
+      "Increase encryption strength",
+      "Make C2 look like normal traffic",
+      "Reduce malware memory usage",
+      "Disable host firewalls"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "TLS certificates with short validity and self‑signed chains are often used by malware to avoid detection.",
+    "question": "Why might malware use a self‑signed TLS certificate?",
+    "options": [
+      "To avoid paying CAs",
+      "To be immediately trusted",
+      "To match enterprise cert policies",
+      "To display a green lock"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Time‑based sandbox evasion causes malware to sleep longer than the sandbox’s execution window, stalling analysis.",
+    "question": "Which technique uses sleep delays to evade automated analysis?",
+    "options": [
+      "Beacon jitter",
+      "Time bomb",
+      "Heap spray",
+      "Thread hijacking"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Memory exploitation checks like measuring CPU frequency differences can reveal virtualized environments.",
+    "question": "Which sandbox evasion method measures CPU characteristics?",
+    "options": [
+      "CPUID timing checks",
+      "File‐system enumeration",
+      "Registry key presence",
+      "DLL load order"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Anti‑debugging APIs such as IsDebuggerPresent allow malware to detect when a debugger is attached.",
+    "question": "What does calling IsDebuggerPresent() in code detect?",
+    "options": [
+      "Sandbox network block",
+      "Presence of a debugger",
+      "Encrypted shellcode",
+      "Expired certificates"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Batch normalization normalizes layer inputs to stabilize learning by reducing internal covariate shift.",
+    "question": "What is the primary purpose of batch normalization?",
+    "options": [
+      "Reduce overfitting",
+      "Normalize activations to stabilize training",
+      "Decrease model size",
+      "Increase learning rate"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "ReLU (Rectified Linear Unit) activation outputs zero for negative inputs and identity for positive inputs, alleviating vanishing gradients.",
+    "question": "Which activation function is defined as f(x) = max(0, x)?",
+    "options": [
+      "Sigmoid",
+      "Tanh",
+      "ReLU",
+      "Softmax"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Softmax converts raw logits into probabilities that sum to 1 across classes.",
+    "question": "What does the softmax function output for multi‑class classification?",
+    "options": [
+      "Binary values",
+      "Normalized probabilities summing to one",
+      "Loss values",
+      "Normalized logits"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Cross‑entropy loss measures the difference between two probability distributions and is commonly used for classification tasks.",
+    "question": "Which loss function is typically used with softmax outputs for classification?",
+    "options": [
+      "Mean squared error",
+      "Mean absolute error",
+      "Cross‑entropy loss",
+      "Hinge loss"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Weight decay adds an L2 penalty to the loss to discourage large weights and prevent overfitting.",
+    "question": "What does weight decay correspond to in regularization?",
+    "options": [
+      "L1 penalty",
+      "L2 penalty",
+      "Dropout",
+      "Early stopping"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Xavier (Glorot) initialization sets initial weights based on layer sizes to keep the variance of activations constant across layers.",
+    "question": "What is the goal of Xavier initialization?",
+    "options": [
+      "Ensure activations have similar variance across layers",
+      "Maximize sparsity",
+      "Minimize loss",
+      "Normalize input data"
+    ],
+    "answer": 0
+  },
+  {
+    "info": "Convolutional layers apply filters over local regions to exploit spatial correlations in images.",
+    "question": "In CNNs, what operation applies a filter over local patches of the input?",
+    "options": [
+      "Pooling",
+      "Fully connected",
+      "Convolution",
+      "Dropout"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Max pooling downsamples feature maps by taking the maximum value over a region, capturing the most prominent features.",
+    "question": "What does max pooling do in a CNN?",
+    "options": [
+      "Takes average of region",
+      "Takes maximum over region",
+      "Applies a filter",
+      "Flattens features"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "LSTMs use gates (input, forget, output) to control the flow of information and mitigate vanishing gradients in sequence models.",
+    "question": "Which RNN variant includes forget, input, and output gates?",
+    "options": [
+      "Vanilla RNN",
+      "GRU",
+      "LSTM",
+      "Transformer"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Self‑attention computes pairwise interactions between all elements in a sequence to capture global dependencies.",
+    "question": "What mechanism allows transformers to weigh relationships between all input tokens?",
+    "options": [
+      "Recurrent connections",
+      "Convolution",
+      "Self‑attention",
+      "Pooling"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Positional encoding injects sequence order information into transformer input embeddings, since transformers have no built‑in notion of position.",
+    "question": "Why are positional encodings added in transformers?",
+    "options": [
+      "To normalize embeddings",
+      "To encode token positions",
+      "To reduce overfitting",
+      "To speed up training"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Transfer learning fine‑tunes a pre‑trained model on a new task to leverage existing learned features.",
+    "question": "What is transfer learning in deep learning?",
+    "options": [
+      "Training from scratch",
+      "Fine‑tuning a pre‑trained model",
+      "Adding dropout",
+      "Applying batch normalization"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Early stopping halts training when validation performance stops improving, preventing overfitting and wasted compute.",
+    "question": "What does early stopping do during training?",
+    "options": [
+      "Halts when training loss increases",
+      "Halts when validation loss no longer improves",
+      "Resets weights",
+      "Increases learning rate"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Data augmentation generates new training samples by applying label‑preserving transformations (e.g. flips, crops) to improve generalization.",
+    "question": "What is data augmentation used for?",
+    "options": [
+      "Reducing model size",
+      "Increasing training data variety",
+      "Normalizing features",
+      "Evaluating model"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Random search samples hyperparameters at random and often finds good configurations more efficiently than exhaustive grid search.",
+    "question": "Which hyperparameter tuning strategy randomly samples the search space?",
+    "options": [
+      "Grid search",
+      "Random search",
+      "Bayesian optimization",
+      "Gradient descent"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Gradient clipping caps gradient norms to prevent exploding gradients in recurrent or very deep networks.",
+    "question": "What is gradient clipping used for?",
+    "options": [
+      "Prevent vanishing gradients",
+      "Prevent exploding gradients",
+      "Optimize learning rate",
+      "Normalize inputs"
+    ],
+    "answer": 1
+  },
+  {
+    "info": "Residual connections (skip connections) allow gradients to bypass layers, enabling training of very deep neural networks.",
+    "question": "What do residual (skip) connections enable in deep networks?",
+    "options": [
+      "More pooling",
+      "Skip over unneeded data",
+      "Train very deep models",
+      "Increase learning rate"
+    ],
+    "answer": 2
+  },
+  {
+    "info": "Batch size impacts the noise in gradient estimates: larger batches yield more stable gradients at the cost of memory and potentially slower convergence.",
+    "question": "What effect does increasing batch size have on gradient estimates?",
+    "options": [
+      "More noisy",
+      "More stable",
+      "Less memory use",
+      "Slower convergence"
+    ],
+    "answer": 1
+  }
+]
+
